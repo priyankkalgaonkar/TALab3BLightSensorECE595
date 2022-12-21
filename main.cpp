@@ -8,5 +8,6 @@ int main() {
         val = sensor.read();
         printf("Sensor reading: %2.2f - %2.2f\r\n", val, (float)(1023-val)*10/val);
         myled = !myled;
+        wait_us(50000);
     }
 }
